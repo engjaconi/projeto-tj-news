@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* Configurações Mobile First */
+
+html, body {
+    height: 100vh;
+}
