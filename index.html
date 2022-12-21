@@ -10,20 +10,28 @@
     
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body>
+<body onresize="PaginaRedimencionada()">
     <header>
-
+        <h1>TJ - News</h1>
+        <p>Sua fonte atualizada de notícias</p>
     </header>
     <nav>
-
+        <i id="menu-amburger" class="material-symbols-outlined" onclick="ExibeMenu()">
+            menu
+        </i>
+        <ul id="menu-opcoes">
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </nav>
     <main>
         <article>
             <section>
-
+                
             </section>
-
             <aside>
 
             </aside>
@@ -32,5 +40,26 @@
     <footer>
 
     </footer>
+    <script>
+        let menuOpcoes = document.getElementById('menu-opcoes');
+        let menuAmburger = document.getElementById('menu-amburger');
+
+        function PaginaRedimencionada() {
+            if (window.innerWidth >= 768) {
+                menuOpcoes.style.display = 'block';
+                menuAmburger.style.display = 'none';
+            } else {
+                menuOpcoes.style.display = 'none';
+                menuAmburger.style.display = 'block';
+            }
+        }
+        function ExibeMenu() {
+            if(menuOpcoes.style.display == 'block'){
+                menuOpcoes.style.display = 'none';
+            } else {
+                menuOpcoes.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
