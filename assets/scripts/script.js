@@ -6,9 +6,11 @@ function resizePage() {
     if (window.innerWidth >= 768) {
         navList.style.display = 'block';
         menuIcon.style.display = 'none';
+        document.location.reload(true);
     } else {
         navList.style.display = 'none';
         menuIcon.style.display = 'block';
+        document.location.reload(true);
     }
 }
 

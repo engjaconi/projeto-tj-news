@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
 
     main {
-        max-width: 800px;
+        width: 80%;
+        min-width: 700px;
+        max-width: 700px;
     }
 
     #nav__list { 
@@ -26,7 +28,7 @@
 
     #icon__menu {
         display: none;
-    }  
+    } 
 
     .list__itens {
         border-top: none;
@@ -35,7 +37,7 @@
     .aside__list {
         display: flex;
         justify-content: space-evenly;
-        gap: 20px;
+        gap: 10px;
     }
     
     .aside__card {
