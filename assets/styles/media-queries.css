@@ -1,6 +1,23 @@
 @charset "UTF-8";
-/* Configurações demais midias */
+
 @media screen and (min-width: 768px) {
+
+    main {
+        max-width: 800px;
+    }
+
+    .nav__list { 
+        display: inline-block; 
+    }
+
+    .nav__itens {
+        margin-left: 20px;
+    }
+
+    #icon__menu {
+        display: none;
+    }
+
     nav {
         background-color: var(--cor1);
     }
@@ -15,6 +32,6 @@
         background-color: var(--cor2);
         margin-left: 5px;
         padding: 8px;
-        border-radius: 5px 5px 0px 0px ;
+        border-radius: 5px 0px 5px 0px ;
     }   
 }

@@ -4,62 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>TJ News - ChatGPT </title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/media-queries.css">
+    <title>TJ News - Metaverso pode ajudar na reabilitação de pessoas com deficiência, mostra estudo</title>
+    <meta name="description" content="Em pessoas com paralisia cerebral, a aplicação de tarefas em realidade virtual por meio da telereabilitação auxiliou no engajamento e na melhora de desempenho">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- Menu Icon Import -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
-<body onresize="PaginaRedimencionada()">
+<body onresize="resizePage()">
     <header>
-        <h1>TJ - News</h1>
-        <p>Sua fonte atualizada de notícias</p>
+        <h1 class="header__title">TJ - News</h1>
+        <p class="header__subtitle">Sua fonte atualizada de notícias</p>
     </header>
     <nav>
-        <i id="menu-amburger" class="material-symbols-outlined" onclick="ExibeMenu()">
+        <i id="icon__menu" class="material-symbols-outlined" onclick="showMenu()">
             menu
         </i>
-        <ul id="menu-opcoes">
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+        <ul id="nav__list">
+            <li class="list__itens"><a class="nav__link" href="#metaverso">Metaverso</a></li>
+            <li class="list__itens"><a class="nav__link" href="#realidade-virtual">Realidade virtual</a></li>
+            <li class="list__itens"><a class="nav__link" href="#extrategia-complementar">Extrátegia complementar</a></li>
+            <li class="list__itens"><a class="nav__link" href="#mais-noticias">Mais notícias</a></li>
         </ul>
     </nav>
     <main>
         <article>
-            <section>
-                
-            </section>
-            <aside>
+            <section id="metaverso">
+                <blockquote cite="https://www.cnnbrasil.com.br/saude/metaverso-pode-ajudar-na-reabilitacao-de-pessoas-com-deficiencia-mostra-estudo/">
+                    <h2 class="section__title">Metaverso pode ajudar na reabilitação de pessoas com deficiência, mostra estudo</h2>
+                    <p class="article__author"><cite>Lucas Rocha da CNN</cite> em São Paulo <date class="articl__date">10/01/2023 às 10:35</date></p> 
 
+                    <p>
+                        Em pessoas com paralisia cerebral, a aplicação de tarefas em realidade virtual por meio da telereabilitação auxiliou no engajamento e na melhora de desempenho
+                    </p>
+                    <p>
+                        O metaverso é um mundo virtual que permite a interação entre pessoas a partir de avatares personalizados, além da circulação por espaços construídos que simulam a realidade como conhecemos.
+                    </p>
+                    <p>
+                        Pesquisadores da Universidade de São Paulo (USP) descobriram que o metaverso pode ter uma outra função além do entretenimento: ajudar na reabilitação de pessoas com deficiência.
+                    </p>
+                    <p>
+                        Um estudo publicado pelo grupo da Escola de Artes, Ciências e Humanidades mostrou que em pessoas com paralisia cerebral, a aplicação de tarefas em realidade virtual por meio da telereabilitação auxiliou no engajamento, na melhora de desempenho e foi uma opção de incentivo à prática de atividade física, inclusive durante a pandemia.
+                    </p>
+                    <figure>
+                        <img src="./assets/images/metaverso_estudo_usp.webp" class="section__image" title="Metaverso é um complemento dos métodos de recuperação tradicional, diz pesquisador" alt="Metaverso é um complemento dos métodos de recuperação tradicional, diz pesquisador">
+                        <figcaption>Metaverso é um complemento dos métodos de recuperação tradicional, diz pesquisador</figcaption>
+                    </figure>
+                </blockquote>
+            </section>
+            <section id="realidade-virtual">
+                <blockquote cite="https://www.cnnbrasil.com.br/saude/metaverso-pode-ajudar-na-reabilitacao-de-pessoas-com-deficiencia-mostra-estudo/">
+                    <h2 class="section__title">Realidade virtual e paralisia cerebral</h2>
+                    <p>
+                        O estudo sobre a telereabilitação de pessoas com paralisia cerebral foi realizado entre março e junho de 2020 e contou com a participação de 44 pessoas. O trabalho foi realizado durante o período de isolamento social da pandemia de Covid-19, que impedia a realização da terapia tradicional.
+                    </p>
+                    <p>
+                        Pessoas com paralisia cerebral apresentam distúrbios motores associados a aspectos como mudanças de sensação, aprendizado e comunicação. Com o objetivo de melhorar a performance motora, os participantes realizavam práticas propostas com o apoio remoto de um pesquisador e auxílio de um responsável.
+
+                    </p>
+                    <p>
+                        Uma das atividades consistia na coleta de bolinhas coloridas que caíam no visor do computador. Os movimentos dos participantes eram detectados pela câmera da máquina. Durante o jogo, a percepção de esforço e cansaço dos participantes, foi avaliada.
+
+                    </p>
+                    <p>
+                        A escala é baseada nas sensações sentidas durante o exercício, como fadiga muscular e aumento da frequência cardíaca e respiratória. Também foram analisadas a performance motora, medida pela precisão dos movimentos e o número de acertos e erros, e a motivação e satisfação dos participantes.
+
+                    </p>
+                    <p>
+                        De acordo com o estudo, a melhora na performance no jogo não foi constante. No entanto, a recepção dos jogos pelos pacientes foi positiva, tendo sido considerado divertido pelos participantes, que se mostraram interessados em continuar a usá-lo nas suas terapias.
+
+                    </p>
+                    <p>
+                        “As pessoas gostam mais, elas têm mais motivação para fazer uma reabilitação em ambiente virtual”, afirma o professor do curso de Educação Física e Saúde Carlos Monteiro, coordenador da iniciativa.
+
+                    </p>
+                </blockquote>
+            </section>
+
+            <section id="extrategia-complementar">
+                <blockquote cite="https://www.cnnbrasil.com.br/saude/metaverso-pode-ajudar-na-reabilitacao-de-pessoas-com-deficiencia-mostra-estudo/">
+                    <h2 class="section__title">Estratégia complementar</h2>
+                    <p>
+                        A pesquisa desenvolvida pelo grupo da USP não utiliza o metaverso imersivo, aquele que conta com óculos de realidade virtual. De maneira mais simples, é possível realizar as tarefas apenas com um computador ou celular e uma boa conexão com a internet.
+
+                    </p>
+                    <p>
+                        Segundo os especialistas, isso facilita o acesso das pessoas a essa forma de reabilitação e evita que elas precisem gastar com óculos virtuais caros ou se deslocar para laboratórios onde existem equipamentos avançados. Com o uso do metaverso não imersivo, o terapeuta também pode atender mais de um paciente por vez e pessoas de diferentes estados passam a ter acesso a esse tratamento.
+
+                    </p>
+                    <p>
+                        Apesar dessas vantagens, Monteiro lembra que o metaverso é um complemento dos métodos de recuperação tradicional, não uma substituição. “Percebemos que, quando tarefas no ambiente virtual são mais difíceis que no real, isso facilita na hora de realizar as atividades na vida real”, afirma.
+
+                    </p>
+                    <p>
+                        Ele aponta como desafios para o amplo uso investidores acreditarem no uso do metaverso para fins de saúde, e a dificuldade de algumas pessoas para se adaptarem a plataformas digitais. Para ele, porém o uso do metaverso na educação e saúde pode ser adiado, mas é inevitável.
+
+                    </p>
+                    <p><em>(Com informações do Jornal da USP)</em></p>
+                </blockquote>
+            </section>
+            <aside id="mais-noticias">
+                <h2 class="aside__title">Mais notícias</h2>
+                <ul class="aside__list">
+                    <li class="aside__item">
+                        <a class="aside__link" href="https://www.cnnbrasil.com.br/saude/brasileiros-acreditam-que-futuro-da-saude-depende-mais-de-deus-que-de-medicos-aponta-pesquisa/" rel="external" target="_blank">
+                            <div class="aside__card">
+                                <img src="./assets/images/santuario-n-s-aparecida-1.webp" alt="Santuario de Nossa Senhora de Aparecida">
+                                <p>Brasileiros acreditam que futuro da saúde depende mais de Deus que de médicos, aponta pesquisa</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="aside__item">
+                        <a class="aside__link" href="https://www.cnnbrasil.com.br/saude/estudo-identifica-fator-genetico-que-pode-levar-a-protecao-contra-a-covid-19/" rel="external" target="_blank">
+                            <div class="aside__card">
+                                <img src="./assets/images/moderna-farmaceutica-06.webp" alt="Atividades em laborátorio da Farmacêutica Moderna">
+                                <p>Estudo identifica fator genético que pode levar à proteção contra a Covid-19</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="aside__item">
+                        <a class="aside__link" href="https://www.cnnbrasil.com.br/saude/esquizofrenia-pode-ter-relacao-com-alteracoes-vasculares-no-cerebro-diz-estudo/" rel="external" target="_blank">
+                            <div class="aside__card">
+                                <img src="./assets/images/terapia_unsplash-1.webp" alt="Homem sentado em um sofá em uma sala de terapia">
+                                <p>Esquizofrenia pode ter relação com alterações vasculares no cérebro, diz estudo</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </aside>
         </article>
     </main>
     <footer>
-
+        Desenvolvido por <span class="bold">Tiago Jaconi</span>
     </footer>
-    <script>
-        let menuOpcoes = document.getElementById('menu-opcoes');
-        let menuAmburger = document.getElementById('menu-amburger');
 
-        function PaginaRedimencionada() {
-            if (window.innerWidth >= 768) {
-                menuOpcoes.style.display = 'block';
-                menuAmburger.style.display = 'none';
-            } else {
-                menuOpcoes.style.display = 'none';
-                menuAmburger.style.display = 'block';
-            }
-        }
-        function ExibeMenu() {
-            if(menuOpcoes.style.display == 'block'){
-                menuOpcoes.style.display = 'none';
-            } else {
-                menuOpcoes.style.display = 'block';
-            }
-        }
-    </script>
+    <script type="text/javascript" src="./assets/scripts/script.js"></script>
 </body>
 </html>
