@@ -6,32 +6,42 @@
         max-width: 800px;
     }
 
-    .nav__list { 
-        display: inline-block; 
+    #nav__list { 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    .nav__itens {
-        margin-left: 20px;
+    .list__itens {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+        border: none;
+        margin-left: 10px;
     }
 
     #icon__menu {
         display: none;
+    }  
+
+    .list__itens {
+        border-top: none;
     }
 
-    nav {
-        background-color: var(--cor1);
+    .aside__list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
     }
     
-    nav > ul {
-        list-style-type: none;
+    .aside__card {
+        width: 200px;
+        height: 200px;
+    } 
+
+    .aside__item img{
+        width: 190px;
     }
-    
-    nav > ul > li {
-        display: inline-block;
-        width: 70px;
-        background-color: var(--cor2);
-        margin-left: 5px;
-        padding: 8px;
-        border-radius: 5px 0px 5px 0px ;
-    }   
 }
