@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    min-width: 400px;
+    min-width: 320px;
     margin: auto;
     background-color: var(--color-4);
     color: var(--black);
@@ -83,7 +83,7 @@ nav {
 }
 
 #icon__menu {
-    padding: 5px;
+    padding: 5px 0;
 }
 
 .list__itens div {
@@ -101,7 +101,7 @@ nav {
 
 main {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
     background-color: var(--white);
@@ -138,15 +138,14 @@ figcaption {
 
 .aside__list {
     text-align: center;
-    padding-bottom: 10px;
     margin: auto;
-    width: 300px;
+    width: 250px;
 }
 
 .aside__card {
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     background-color: var(--color-4);
     box-shadow: var(--box-shadow);
 }
@@ -160,7 +159,7 @@ figcaption {
 }
 
 .aside__item img{
-    width: 250px;
+    width: 230px;
     padding-bottom: 10px;
     border-radius: 20px;
 }
