@@ -9,6 +9,7 @@
     --color-4: #b8bbbfa2;
     --black: #0D0D0D;
     --white: #FFF;
+    --box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Configurações Mobile First */
@@ -17,11 +18,16 @@
     padding: 0px;
     font-family: 'Newsreader', serif;
     font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
     min-width: 400px;
     margin: auto;
     background-color: var(--color-4);
@@ -47,8 +53,8 @@ header {
 nav {
     width: 100%;
     position: sticky;
-    top: 0;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    top: -1px;
+    box-shadow: var(--box-shadow);
 }
 
 .nav__list { 
@@ -79,7 +85,6 @@ nav {
 }
 
 .nav__link {
-    text-decoration: none;
     color: var(--cor5);
     font-size: 1.2em;
 }
@@ -90,7 +95,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     background-color: var(--white);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow);
 }
 
 .section__title, .aside__title {
@@ -110,10 +115,9 @@ p {
 }
 
 .section__image {
-    position: relative;
     max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow);
     margin: 10px 0;
 }
 
@@ -131,20 +135,18 @@ figcaption {
 }
 
 .aside__card {
-
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: var(--color-4);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow);
 }
 
 .aside__card:hover {
-    scale: 1.05;
+    background-color: var(--color-2);
 }
 
 .aside__link {
-    text-decoration: none;
     color: var(--black);
 }
 
@@ -161,7 +163,7 @@ footer {
     font-size: 1.1rem;
     text-align: center;
     padding-top: 40px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    box-shadow: var(--box-shadow);
 }
 
 .bold {
