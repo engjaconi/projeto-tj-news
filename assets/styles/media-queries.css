@@ -13,13 +13,15 @@
     }
 
     .list__itens {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 200px;
-        height: 40px;
         border: none;
-        margin-left: 10px;
+    }
+
+    .list__itens div {
+        width: 200px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        place-content: center center;
     }
 
     #icon__menu {

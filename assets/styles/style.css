@@ -76,11 +76,22 @@ nav {
 
 #icon__menu, .list__itens {
     border-top: 1px solid var(--color-2);
-    padding: 10px 0;
 }
 
 #icon__menu:hover, .list__itens:hover {
     background-color: var(--color-2);
+}
+
+#icon__menu {
+    padding: 5px;
+}
+
+.list__itens div {
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .nav__link {
