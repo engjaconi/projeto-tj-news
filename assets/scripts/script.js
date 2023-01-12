@@ -17,9 +17,11 @@ function resizePage() {
 }
 
 function showMenu() {
-    if(navList.style.display == 'block'){
+    let newSizePage = window.innerWidth;
+
+    if(navList.style.display == 'block' && newSizePage <= 766){
         navList.style.display = 'none';
-    } else {
+    } else if(newSizePage <= 766){
         navList.style.display = 'block';
     }
 }
